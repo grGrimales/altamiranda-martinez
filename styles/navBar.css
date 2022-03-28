@@ -1,0 +1,139 @@
+.header {
+  background-color: #182436;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+}
+.header__logo {
+  width: 56%;
+  align-self: center;
+}
+
+.header__icon {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  transition: all 0.5s ease;
+  justify-items: center;
+  align-content: end;
+  line-height: 8.3;
+}
+
+.nav__item {
+  cursor: pointer;
+}
+
+.nav__links,
+.nav__links--redes {
+  color: #ffff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.nav__links:hover,
+.nav__links--active {
+  transition: all 0.5s ease;
+  border-bottom: 1px solid #ba954e;
+  font-weight: bold;
+  color: #ba954e;
+}
+
+.nav__links--redes .iconify {
+  font-size: 1.5rem;
+}
+
+.nav__links--redes .iconify:hover {
+  color: #ba954e;
+  font-weight: bold;
+  transform: scale(1.2, 1.2);
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  align-items: center;
+  background-color: #202e46;
+  left: 0;
+  height: 90vh;
+  opacity: 1;
+  z-index: 1;
+}
+/*Media query*/
+
+@media (max-width: 769px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    justify-content: space-between;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav__item {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .header {
+    flex-direction: row;
+    width: 100%;
+    height: 12rem;
+    justify-content: space-between;
+  }
+  .header__logo {
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header__logo img {
+    width: 71%;
+  }
+  .header__icon {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__logo img {
+    height: 12rem;
+  }
+  .nav__item {
+    padding: 1rem;
+  }
+  .nav {
+    line-height: 6.3;
+  }
+}
+
+@media (min-width: 1332px) {
+  .header {
+    height: 16rem;
+  }
+
+  .header__logo img {
+    height: 16rem;
+  }
+
+  .nav {
+    line-height: 9;
+  }
+}
