@@ -3,7 +3,10 @@
  */
 const responsive = document.getElementById("responsive");
 const listNav = document.querySelector(".nav");
+const list = document.querySelector(".listDropdown");
+
 const dropdown = document.getElementById("dropdown");
+const containeDropdown = document.getElementById("containeDropdown");
 
 console.log(listNav);
 
@@ -57,7 +60,7 @@ const changeIcon = () => {
 const hideList = () => {
   console.log("Muestra");
 
-  dropdown.classList.add("hide");
+  list.classList.toggle("hide");
 };
 /**
  * Eventos

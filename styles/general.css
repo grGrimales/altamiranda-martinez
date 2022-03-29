@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: #0f1819;
 }
 
 *,
@@ -20,4 +21,8 @@ a {
 
 img {
   width: 100%;
+}
+main {
+  height: 30rem;
+  color: #fff;
 }

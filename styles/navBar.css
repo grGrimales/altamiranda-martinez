@@ -27,13 +27,16 @@
   transition: all 0.5s ease;
   justify-items: center;
   align-content: end;
-  line-height: 8.3;
+  /* line-height: 8.3; */
 }
 
 .nav__item {
   cursor: pointer;
+  position: relative;
 }
 
+.nav__links {
+}
 .nav__links,
 .nav__links--redes {
   color: #ffff;
@@ -47,6 +50,10 @@
   border-bottom: 1px solid #ba954e;
   font-weight: bold;
   color: #ba954e;
+}
+
+.nav__links--dropdown {
+  display: flex;
 }
 
 .nav__links--redes .iconify {
@@ -70,6 +77,63 @@
   opacity: 1;
   z-index: 1;
 }
+
+/*SUBMENU*/
+
+.listDropdown {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  margin-top: 35px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 300ms ease;
+}
+
+.hide {
+  visibility: visible;
+  opacity: 1;
+  top: 19px;
+}
+
+.listDropdown:before {
+  display: flex;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+}
+
+.listDropdown li {
+  padding: 0;
+  margin: 0;
+}
+
+.listDropdown a {
+  display: block;
+  color: #ba954e;
+  padding: 6px;
+  padding-left: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover {
+  transition: all 0.5s ease;
+  font-weight: bold;
+  color: #ba954e;
+}
+
 /*Media query*/
 
 @media (max-width: 769px) {
@@ -88,6 +152,15 @@
 
   .nav__item {
     padding: 2rem;
+  }
+
+  nav ul li ul {
+    left: 13px;
+    transition: all 300ms ease;
+  }
+
+  nav > ul > li:hover ul {
+    top: 50px;
   }
 }
 
@@ -110,6 +183,11 @@
   .header__icon {
     display: none;
   }
+
+  .header__navegation {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -119,21 +197,25 @@
   .nav__item {
     padding: 1rem;
   }
-  .nav {
+  /* .nav {
     line-height: 6.3;
-  }
+  } */
 }
 
 @media (min-width: 1332px) {
   .header {
-    height: 16rem;
+    height: 15rem;
   }
 
   .header__logo img {
-    height: 16rem;
+    height: 15rem;
   }
 
-  .nav {
+  /* .nav {
     line-height: 9;
+  } */
+
+  .hide {
+    top: 25px;
   }
 }

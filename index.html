@@ -6,12 +6,14 @@
     <title>Soluciones Legales Altamiranda Martínez</title>
 
     <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
     <link rel="stylesheet" href="./styles/navBar.css" />
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="./index.html">
-        <img src="images/logo/LOGO A.M V02.png" alt="logo" />
+        <img src="images/logo/LOGO A.M V01.png" alt="logo" />
       </a>
       <div class="header__icon">
         <a id="responsive">
@@ -26,16 +28,21 @@
             </a>
           </li>
 
-          <li class="nav__item">
-            <a class="nav__links" id="dropdown" href="#">
+          <li class="nav__item" id="dropdown">
+            <a class="nav__links" href="#">
               Servicios
-              <span class="iconify" data-icon="ant-design:down-outlined"></span>
-            </a>
+              <span class="iconify" data-icon="ant-design:down-outlined"></span
+            ></a>
 
-            <ul>
-              <li>Servicios1</li>
-              <li>Servicios2</li>
-              <li>Servicios3</li>
+            <div class="nav__links--dropdown"></div>
+
+            <ul class="listDropdown">
+              <li><a href="index.html"> Servicios1 </a></li>
+              <li><a href="index.html"> Servicios2 </a></li>
+
+              <li><a href="index.html"> Servicios3 </a></li>
+              <li><a href="index.html"> Servicios4 </a></li>
+              <li><a href="index.html"> Servicios5 </a></li>
             </ul>
           </li>
 
@@ -77,7 +84,39 @@
         </ul>
       </nav>
     </header>
+    <main><h1>Soy un ejemplo</h1></main>
 
+    <footer class="footer">
+      <div class="description">
+        <p class="description__p">Altamiranda Martinez</p>
+        <span class="description__span">SOLUCIONES LEGALES</span>
+      </div>
+
+      <div class="redes">
+        <a
+          class="redes__links"
+          href="https://twitter.com/?lang=es"
+          target="_blank"
+        >
+          <span class="iconify" data-icon="logos:twitter"></span>
+        </a>
+        <a
+          class="redes__links"
+          href="https://www.instagram.com/altamiranda.martinez.sl/"
+          target="_blank"
+        >
+          <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+        </a>
+        <a
+          class="redes__links"
+          href="https://api.whatsapp.com/send?phone=+549351391-1394"
+          target="_blank"
+        >
+          <span class="iconify" data-icon="logos:whatsapp"></span
+        ></a>
+      </div>
+      <p>Todos los derechos reservados 2022</p>
+    </footer>
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
