@@ -23,6 +23,8 @@ img {
   width: 100%;
 }
 main {
-  height: 30rem;
+  /* height: 30rem; */
+  height: 1000px;
   color: #fff;
+  border-bottom: 2rem;
 }
