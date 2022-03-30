@@ -23,8 +23,60 @@ img {
   width: 100%;
 }
 main {
-  /* height: 30rem; */
-  height: 1000px;
+  height: 100vh;
   color: #fff;
-  border-bottom: 2rem;
+}
+.img-fondo{
+  height: 100vh;
+}
+
+.carousel-inner {
+  height: 90vh;
+}
+
+.carousel-caption{
+    width: 100%;
+    padding-bottom: 1rem;
+  
+}
+.carousel-caption h5{
+  font-size: 5rem;
+
+}
+.carousel-caption p{
+  font-size: 1.7rem;
+  font-weight: 700;
+
+}
+.textoBanner{
+  background-color: black;
+  opacity: 60%;
+  border-radius: 22px;
+  width: 50%;
+}
+.slider-btn{
+  margin-top:30px;
+}
+.boton-1{ 
+background-color: #BDA871;
+  color:white;
+  border-radius: 10px;
+  padding:1.2rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 15px;
+  opacity: 70%;
+  box-shadow: 0 5px 10px white ;
+    color: white;
+
+}
+.boton-1:hover{
+  background-color: #A48339;
+
+}
+.contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
 }
