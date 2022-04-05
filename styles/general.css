@@ -16,7 +16,7 @@ html {
     "header" 0.3fr
     "main" 5fr
     "footer" 0.5fr ;
-  background-color: white;
+  background-color: #161e1f;
 }
 
 header {
@@ -35,15 +35,19 @@ img {
 }
 main {
   color: #fff;
-  background-color: white;
+  background-color: #161e1f;
   grid-area: main;
 }
 
 footer{
   grid-area: footer;
 }
+
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+
+
 }
 
 h1 {

@@ -58,16 +58,19 @@
   .carousel-inner .carousel-item {
     height: 575px;
   }
+
   .carousel-item .carousel-caption{
      right:0;
      left:0;
   }
+
   .cuerpoUno{
     display:grid;
       align-items: center;
       justify-items: center;
       margin-top: 5%;
   }
+
   .titleUno{
     display: flex;
     justify-content: space-evenly;
@@ -76,66 +79,86 @@
     font-size: "Montserrat", sans-serif;
     color: #ba954e;
   }
+
   .valores{
     display: flex;
     width: 100%;
     justify-content: space-around;
     flex-direction: row-reverse;
   }
+
   .valores li {
     list-style:disc;
     font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
-    color: black;
+    color: #fff;
   }
+
   .cuerpoDos{
     display: grid;
     grid-template-columns: 50% 40%;
     justify-items: center;
     margin-top: 5%;
-    border-bottom: 1px solid black;
   }
+
   .mision{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
   }
+
   .mision h1{
     font-size: 2.5rem;
     font-family:"Montserrat", sans-serif;
-    color:#BA954E;
+    color: #fff;
+
   }
+
   .mision p{
     font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
-    color: black;
+    color: #fff;
   }
+
   .cuerpoTres{
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
     margin-top: 5%;
-    border-bottom: 1px solid black;
   }
+
+  .containerMision, .cuerpoTres
+  {
+    color: #fff;
+    padding: 1rem;
+
+  }
+
   .vision{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 92%;
   }
   .vision h1{
+    color: #fff;
     font-size: 2.5rem;
    font-family:  "Montserrat", sans-serif;
-   color: #ba954e;;
   }
+
   .vision p{
     font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
-    color: black;
+    text-align: justify;
+  }
+  .fotoContenido{
+    display: flex;
+    align-items: center;
   }
   .fotoCont{
     width: 450px;
+    border-radius: 1rem;
     /* border-radius: 50px;
     margin: 5%; */
   }
@@ -162,12 +185,6 @@
     height: 100%;
   }
   
-  /* .containerBody{
-    grid-template:
-    "header" 0.5fr
-    "main" 4fr
-    "footer" 0.4fr ;
-  } */
 .cuerpo{
   margin: 5%;
 }
@@ -221,9 +238,5 @@
   flex-direction: column;
   align-items: center;
   margin: 5%;
-  }
-   
-  @media only screen and (max-width:1332px){
-  
   }
   }

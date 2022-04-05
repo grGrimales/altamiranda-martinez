@@ -41,6 +41,10 @@
   padding: 0.5rem;
   font-size: 1.3rem;
 }
+.nav__links--redes {
+  background-color: transparent;
+  overflow: hidden;
+}
 
 .nav__links:hover,
 .nav__links--active {
