@@ -35,8 +35,6 @@
   position: relative;
 }
 
-.nav__links {
-}
 .nav__links,
 .nav__links--redes {
   color: #ffff;
@@ -189,6 +187,7 @@ nav ul li ul li a:hover {
     align-items: center;
   }
 }
+
 
 @media (min-width: 992px) {
   .header__logo img {

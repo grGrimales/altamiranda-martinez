@@ -2,7 +2,6 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #182436;
-  height: 10rem;
 }
 
 .description {

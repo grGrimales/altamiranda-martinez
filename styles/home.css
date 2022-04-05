@@ -1,0 +1,229 @@
+/* ESTILOS CARROUSEL */
+.carousel-inner {
+    height: 90vh;
+  }
+  
+  .carousel-caption{
+      width: 100%;
+      padding-bottom: 1rem;
+    
+  }
+  .carousel-caption h5{
+    font-size: 5rem;
+  
+  }
+  .carousel-caption p{
+    font-size: 1.7rem;
+    font-weight: 700;
+  
+  }
+  .slider-btn{
+    margin-top:30px;
+  }
+  .boton-1{ 
+  background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding:1.2rem 2rem;
+    font-size: 1rem;
+    font-weight:bold;
+    margin-right: 15px;
+    opacity: 70%;
+    box-shadow: 3px white ;
+      color: white;
+  
+  }
+  .boton-1:hover{
+    background-color: #A48339;
+  
+  }
+  .contenido-descripcion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .textoBanner{
+    background-color: black;
+    opacity: 60%;
+    border-radius: 22px;
+    width: 70%;
+  }
+  .contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  .carousel-inner .carousel-item {
+    height: 575px;
+  }
+  .carousel-item .carousel-caption{
+     right:0;
+     left:0;
+  }
+  .cuerpoUno{
+    display:grid;
+      align-items: center;
+      justify-items: center;
+      margin-top: 5%;
+  }
+  .titleUno{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    font-size: 3rem;
+    font-size: "Montserrat", sans-serif;
+    color: #ba954e;
+  }
+  .valores{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .valores li {
+    list-style:disc;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  .cuerpoDos{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-items: center;
+    margin-top: 5%;
+    border-bottom: 1px solid black;
+  }
+  .mision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+  .mision h1{
+    font-size: 2.5rem;
+    font-family:"Montserrat", sans-serif;
+    color:#BA954E;
+  }
+  .mision p{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  .cuerpoTres{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin-top: 5%;
+    border-bottom: 1px solid black;
+  }
+  .vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+  .vision h1{
+    font-size: 2.5rem;
+   font-family:  "Montserrat", sans-serif;
+   color: #ba954e;;
+  }
+  .vision p{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+  .fotoCont{
+    width: 450px;
+    /* border-radius: 50px;
+    margin: 5%; */
+  }
+  .textoContenido p{
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .textoContenido h1{
+    font-family: "Montserrat", sans-serif;
+  }
+  .carousel-inner .carousel-item {
+    height: 34.37rem;
+  }
+  
+  /* .cuerpo{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  } */
+  
+  /* MEDIASQUERYS */
+  
+  @media only screen and (max-width: 990px){
+    .carousel-item .carousel-caption {
+    height: 100%;
+  }
+  
+  /* .containerBody{
+    grid-template:
+    "header" 0.5fr
+    "main" 4fr
+    "footer" 0.4fr ;
+  } */
+.cuerpo{
+  margin: 5%;
+}
+  .fotoCont{
+    width: 100%;
+  }
+  .contenido{
+    padding-bottom: 13rem;
+  }
+  .contenido-descripcion{
+    padding-bottom: 13rem;
+  }
+  .textoBanner{
+    background-color: black;
+    opacity: 60%;
+    border-radius: 22px;
+    width: 50%;
+  }
+    .carousel-caption h5{
+      font-size: 2rem   
+     }
+     .carousel-caption p{
+      font-size: 1rem;
+    }
+    .cuerpoUno {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5%;
+    }
+    .cuerpoDos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5%;
+    }
+    .titleUno{
+        display: flex;
+    }
+    .valores {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 10px white ;
+  }
+  .textoContenido {
+     margin-top: 5%;
+  }
+  .cuerpoTres{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  }
+   
+  @media only screen and (max-width:1332px){
+  
+  }
+  }
