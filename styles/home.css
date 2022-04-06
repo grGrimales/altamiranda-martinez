@@ -1,242 +1,304 @@
 /* ESTILOS CARROUSEL */
+
+.carousel-item .carousel-caption {
+  height: 100%;
+}
+
 .carousel-inner {
-    height: 90vh;
-  }
-  
-  .carousel-caption{
-      width: 100%;
-      padding-bottom: 1rem;
     
-  }
-  .carousel-caption h5{
-    font-size: 5rem;
-  
-  }
-  .carousel-caption p{
-    font-size: 1.7rem;
-    font-weight: 700;
-  
-  }
-  .slider-btn{
-    margin-top:30px;
-  }
-  .boton-1{ 
+    height: 10rem;
+}
+
+.slider-btn{
+  display: flex;
+  margin-top:30px;
+}
+
+
+.btnCarousel{ 
   background-color: black;
-    color:white;
-    border-radius: 10px;
-    padding:1.2rem 2rem;
+  color:white;
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+  font-size: 1rem;
+  font-weight:bold;
+  margin-right: 15px;
+  opacity: 70%;
+  box-shadow: 3px white ;
+  color: white;
+
+}
+
+.btnCarousel:hover{
+  background-color: #A48339;
+
+}
+
+.cuerpo{
+margin: 5%;
+}
+
+.containerImg_img{
+  width: 100%;
+}
+
+.contenido{
+  display: none;
+
+}
+
+.containerBanner{
+  background-color: black;
+  opacity: 60%;
+  border-radius: 1rem;
+}
+
+
+.containerDescription{
+  padding-bottom: 13rem;
+  display: none;
+}
+
+.textoBanner{
+  background-color: black;
+  opacity: 60%;
+  border-radius: 22px;
+  width: 50%;
+}
+
+
+  .carousel-caption h5{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+   }
+
+   .carousel-caption p{
     font-size: 1rem;
-    font-weight:bold;
-    margin-right: 15px;
-    opacity: 70%;
-    box-shadow: 3px white ;
-      color: white;
-  
   }
-  .boton-1:hover{
-    background-color: #A48339;
-  
-  }
-  .contenido-descripcion{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-  .textoBanner{
-    background-color: black;
-    opacity: 60%;
-    border-radius: 22px;
-    width: 70%;
-  }
-  .contenido{
+
+  .containerValores {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5rem;
-  }
-  .carousel-inner .carousel-item {
-    height: 575px;
+    margin: 5%;
   }
 
-  .carousel-item .carousel-caption{
-     right:0;
-     left:0;
-  }
-
-  .cuerpoUno{
-    display:grid;
-      align-items: center;
-      justify-items: center;
-      margin-top: 5%;
-  }
-
-  .titleUno{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 3%;
-    font-size: 3rem;
-    font-size: "Montserrat", sans-serif;
-    color: #ba954e;
-  }
-
-  .valores{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-  }
-
-  .valores li {
-    list-style:disc;
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-  }
-
-  .cuerpoDos{
-    display: grid;
-    grid-template-columns: 50% 40%;
-    justify-items: center;
-    margin-top: 5%;
-  }
-
-  .mision{
+  .containerMision {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    margin: 5%;
   }
 
-  .mision h1{
+  .containerMision__title{
     font-size: 2.5rem;
     font-family:"Montserrat", sans-serif;
     color: #ba954e;
 
   }
 
-  .mision p{
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-  }
-
-  .cuerpoTres{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    margin-top: 5%;
-  }
-
-  .containerMision, .cuerpoTres
-  {
-    color: #fff;
-    padding: 1rem;
+  .containerTitle{
+      display: flex;
+      color: #ba954e;
+    font-size: 3rem;
 
   }
 
-  .vision{
+ 
+
+  .containerImg__img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .containerList {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 92%;
-  }
-  .vision h1{
-    color: #ba954e;
-    font-size: 2.5rem;
-   font-family:  "Montserrat", sans-serif;
+    border-top: 10px white ;
+}
+
+
+  .containerVision{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 5%;
+}
+
+.containerVision__title{
+  color: #ba954e;
+  font-size: 2.5rem;
+ font-family:  "Montserrat", sans-serif;
+}
+
+
+
+  /* MEDIASQUERYS */
+  @media (min-width: 768px) { 
+    .carousel-inner {
+      height: 25rem;
+    }
+    
+    .carousel-caption{
+        width: 100%;
+        padding-bottom: 1rem;
+      
+    }
+    .carousel-caption h5{
+      font-size: 3rem;
+    
+    }
+
+    .carousel-caption p{
+      font-size: 1.7rem;
+    
+    }
+
+    .btnCarousel{ 
+      padding:1.2rem 2rem;
+    }
+   
+    .containerDescription{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  
+    .containerBanner{
+      width: 70%;
+    }
+  
+    .contenido{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 5rem;
+      padding-bottom: 13rem;
+    }
+  
+    .carousel-inner .carousel-item {
+      height: 575px;
+    }
+  
+    .carousel-item .carousel-caption{
+       right:0;
+       left:0;
+    }
+  
+    .containerValores{
+      display:grid;
+        align-items: center;
+        justify-items: center;
+        margin-top: 5%;
+    }
+  
+    .containerTitle{
+      justify-content: space-evenly;
+      margin-top: 3%;
+     
+    }
+  
+    .containerList{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+    }
+  
+    .containerList li {
+      list-style:disc;
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+    }
+  
+    .containerMision{
+      display: grid;
+      grid-template-columns: 50% 60%;
+      justify-items: center;
+      margin-top: 5%;
+    }
+  
+    .containerMision__description{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+    }
+  
+ 
+  
+    .containerMision__p{
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+    }
+  
+    .containerVision{
+      display: grid;
+      grid-template-columns: 50% 60%;
+      justify-items: center;
+      margin-top: 5%;
+    }
+  
+    .containerMision, .containerVision
+    {
+      color: #fff;
+      padding: 1rem;
+  
+    }
+  
+    .containerVision__description{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 92%;
+    }
+  
+    
+  
+    .containerVision__p{
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      text-align: justify;
+    }
+  
+    .containerImg{
+      display: flex;
+      align-items: center;
+    }
+  
+    .containerImg__img{
+      width: 450px;
+      border-radius: 1rem;
+    }
+  
+    .textoContenido p{
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+    }
+  
+    .textoContenido h1{
+      font-family: "Montserrat", sans-serif;
+    }
+  
+    .carousel-inner .carousel-item {
+      height: 34.37rem;
+    }
+    
+  
   }
 
-  .vision p{
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
-    text-align: justify;
+  @media (min-width: 992px) { 
+    .containerBanner {
+      width: 61%;
+      line-height: 2;
   }
-  .fotoContenido{
-    display: flex;
-    align-items: center;
-  }
-  .fotoCont{
-    width: 450px;
-    border-radius: 1rem;
-    /* border-radius: 50px;
-    margin: 5%; */
-  }
-  .textoContenido p{
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-  }
-  .textoContenido h1{
-    font-family: "Montserrat", sans-serif;
-  }
+
   .carousel-inner .carousel-item {
-    height: 34.37rem;
+    height: 45rem;
   }
-  
-  /* .cuerpo{
-    display: grid;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
-  } */
-  
-  /* MEDIASQUERYS */
-  
-  @media only screen and (max-width: 990px){
-    .carousel-item .carousel-caption {
-    height: 100%;
-  }
-  
-.cuerpo{
-  margin: 5%;
-}
-  .fotoCont{
-    width: 100%;
-  }
-  .contenido{
-    padding-bottom: 13rem;
-  }
-  .contenido-descripcion{
-    padding-bottom: 13rem;
-  }
-  .textoBanner{
-    background-color: black;
-    opacity: 60%;
-    border-radius: 22px;
-    width: 50%;
-  }
-    .carousel-caption h5{
-      font-size: 2rem   
-     }
-     .carousel-caption p{
-      font-size: 1rem;
-    }
-    .cuerpoUno {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 5%;
-    }
-    .cuerpoDos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 5%;
-    }
-    .titleUno{
-        display: flex;
-    }
-    .valores {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-top: 10px white ;
-  }
-  .textoContenido {
-     margin-top: 5%;
-  }
-  .cuerpoTres{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5%;
-  }
+
   }
