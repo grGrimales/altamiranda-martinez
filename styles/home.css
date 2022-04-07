@@ -76,6 +76,11 @@ margin: 5%;
     font-size: 1rem;
   }
 
+
+  .textoContenido h1{
+    font-family: "Montserrat", sans-serif;
+  }
+
   .containerValores {
     display: flex;
     flex-direction: column;
@@ -103,9 +108,7 @@ margin: 5%;
     font-size: 3rem;
 
   }
-
  
-
   .containerImg__img{
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -258,7 +261,6 @@ margin: 5%;
     }
   
     
-  
     .containerVision__p{
       font-size: 1.6rem;
       font-family: "Roboto", sans-serif;
@@ -272,7 +274,6 @@ margin: 5%;
   
     .containerImg__img{
       width: 450px;
-      border-radius: 1rem;
     }
   
     .textoContenido p{
@@ -280,9 +281,6 @@ margin: 5%;
       font-family: "Montserrat", sans-serif;
     }
   
-    .textoContenido h1{
-      font-family: "Montserrat", sans-serif;
-    }
   
     .carousel-inner .carousel-item {
       height: 34.37rem;
@@ -304,4 +302,4 @@ margin: 5%;
   }
 
 
-  
+ 
