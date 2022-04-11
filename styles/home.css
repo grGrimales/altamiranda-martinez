@@ -5,7 +5,6 @@
 }
 
 .carousel-inner {
-    
     height: 10rem;
 }
 
@@ -21,7 +20,6 @@
   border-radius: 10px;
   padding: 0.2rem 2rem;
   font-size: 1rem;
-  font-weight:bold;
   margin-right: 15px;
   opacity: 70%;
   box-shadow: 3px white ;
@@ -32,10 +30,6 @@
 .btnCarousel:hover{
   background-color: #A48339;
 
-}
-
-.cuerpo{
-margin: 5%;
 }
 
 .containerImg_img{
@@ -53,10 +47,17 @@ margin: 5%;
   border-radius: 1rem;
 }
 
+.containerBanner p{
+  color: #fff;
+}
 
 .containerDescription{
   padding-bottom: 13rem;
   display: none;
+}
+
+.containerDescription__p{
+  color: #ba954e;
 }
 
 .textoBanner{
@@ -70,10 +71,14 @@ margin: 5%;
   .carousel-caption h5{
     font-size: 2rem;
     margin-top: 0.5rem;
+    color: #ba954e;
+    font-weight: bold;
    }
 
-   .carousel-caption p{
+   .contenido__p{
     font-size: 1rem;
+    color: #ba954e;
+
   }
 
 
@@ -138,6 +143,12 @@ margin: 5%;
 
 
   /* MEDIASQUERYS */
+  @media (min-width: 523px) { 
+    .carousel-inner {
+      height: 12rem;
+  }
+  }
+
   @media (min-width: 768px) { 
     .carousel-inner {
       height: 25rem;
@@ -188,6 +199,7 @@ margin: 5%;
     .carousel-item .carousel-caption{
        right:0;
        left:0;
+       top: 0.2rem;
     }
   
     .containerValores{
@@ -289,10 +301,11 @@ margin: 5%;
   
   }
 
+
   @media (min-width: 992px) { 
     .containerBanner {
       width: 61%;
-      line-height: 2;
+      line-height: 1.5;
   }
 
   .carousel-inner .carousel-item {
@@ -301,5 +314,17 @@ margin: 5%;
 
   }
 
+
+  @media (min-width: 1346px) { 
+    .carousel-inner {
+      height: 27rem;
+    }
+
+    .containerBanner {
+      line-height: 2;
+  }
+    
+    
+  }
 
  

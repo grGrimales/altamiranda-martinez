@@ -29,8 +29,19 @@ footer {
 }
 
 .redes__links {
+  color: #ffff;
   font-size: 2rem;
+  margin-bottom: .5rem;
 }
+
+.redes__links:hover,  .redes__links .iconify:hover{
+    transition: all 0.3s ease;
+    color: #ba954e;
+    font-weight: bold;
+   transform: scale(1.2, 1.2);
+
+}
+
 .footer p {
   color: #ffffff;
   text-align: center;
