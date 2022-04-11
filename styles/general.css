@@ -16,7 +16,7 @@ html {
     "header" 0.3fr
     "main" 5fr
     "footer" 0.5fr ;
-  background-color: #161e1f;
+  /* background-color: #161e1f; */
 }
 
 header {
@@ -34,7 +34,7 @@ img {
   width: 100%;
 }
 main {
-  color: #fff;
+  color: white;
   background-color: #161e1f;
   grid-area: main;
 }
