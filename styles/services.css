@@ -47,6 +47,7 @@ margin: 1rem;
     margin: 0 auto;
     height: 20rem;
     margin-bottom: 0.5rem;
+    border-radius: 0.2rem 0.2rem 0 0;
   }
   
   .card__title {
