@@ -80,7 +80,6 @@
   align-items: center;
   background-color: #202e46;
   left: 0;
-  height: 90vh;
   opacity: 1;
   z-index: 1;
 }
@@ -207,7 +206,7 @@ nav ul li ul li a:hover {
 
   }
   .nav__item {
-    padding: 1rem;
+    padding: .5rem;
   }
 }
 

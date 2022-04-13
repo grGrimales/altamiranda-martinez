@@ -45,6 +45,7 @@
   background-color: black;
   opacity: 60%;
   border-radius: 1rem;
+  padding: .5rem;
 }
 
 .containerBanner p{
@@ -151,7 +152,7 @@
 
   @media (min-width: 768px) { 
     .carousel-inner {
-      height: 25rem;
+      height: 29rem;
     }
     
     .carousel-caption{
@@ -160,7 +161,7 @@
       
     }
     .carousel-caption h5{
-      font-size: 3rem;
+      font-size: 2rem;
     
     }
 
@@ -181,7 +182,7 @@
     }
   
     .containerBanner{
-      width: 70%;
+      width: 80%;
     }
   
     .contenido{
