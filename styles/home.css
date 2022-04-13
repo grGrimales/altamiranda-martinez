@@ -57,7 +57,7 @@
 }
 
 .containerDescription__p{
-  color: #ba954e;
+  color: #6C757D;
 }
 
 .textoBanner{
@@ -71,13 +71,13 @@
   .carousel-caption h5{
     font-size: 2rem;
     margin-top: 0.5rem;
-    color: #ba954e;
+    color: #495057;
     font-weight: bold;
    }
 
    .contenido__p{
     font-size: 1rem;
-    color: #ba954e;
+    color: #6C757D;
 
   }
 
@@ -165,7 +165,7 @@
     }
 
     .carousel-caption p{
-      font-size: 1.7rem;
+      font-size: 1.5rem;
     
     }
 
@@ -317,7 +317,7 @@
 
   @media (min-width: 1346px) { 
     .carousel-inner {
-      height: 27rem;
+      height: 34rem;
     }
 
     .containerBanner {

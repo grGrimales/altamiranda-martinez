@@ -1,3 +1,11 @@
+.containerBody {
+
+  grid-template:
+      "header" 0.3fr
+      "main" 7fr
+      "footer" 0.5fr;
+}
+
 main{
   background-color: #fff;
 }
@@ -11,7 +19,7 @@ margin: 1rem;
 }
 
 .containerServices__title{
-  color: #ba954e;
+  color: #495057;
   padding: 1rem;
   font-size: 1.7rem;
   margin-top: 2rem;
@@ -53,13 +61,13 @@ margin: 1rem;
   
   }
   
-  .card__btn {
+  .card__btn, .containerServices__btnPrice {
     width: 100%;
     font-size: 1.25rem;
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    background-color: #219ebc;
+    background-color: #014F86;
     padding: 0.8rem;
     transition: all 0.3s ease-in-out;
     opacity: 0.6;
@@ -69,11 +77,15 @@ margin: 1rem;
     
   }
 
-  .card__btn:hover{
+  .containerServices__btnPrice{
+    border-radius: 1rem;
+  }
+
+  .card__btn:hover, .containerServices__btnPrice:hover{
     opacity: 1;
   }
 
-  .card__btn  .tooltiptext {
+  .containerServices__btnPrice .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color:  #ba954e;
@@ -88,7 +100,7 @@ margin: 1rem;
     margin-left: -60px;
   }
   
-  .card__btn  .tooltiptext::after {
+  .containerServices__btnPrice  .tooltiptext::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -99,17 +111,17 @@ margin: 1rem;
     border-color: transparent transparent #ba954e transparent;
   }
   
-  .card__btn:hover .tooltiptext {
+  .containerServices__btnPrice:hover .tooltiptext {
     visibility: visible;
   }
 
-  .containerServices__btnRedes{
+  .card__btnRedes{
     width: 100%;
     font-size: 1.25rem;
     border: none;
     cursor: pointer;
     opacity: 0.8;
-    background-color: #219ebc;
+    background-color: #014F86;
     padding: 0.8rem;
     transition: all 0.3s ease-in-out;
     opacity: 0.6;
@@ -117,16 +129,15 @@ margin: 1rem;
     position: relative;
     display: inline-block;
     align-self: flex-end;
-    border-radius: 1rem;
   }
 
-.containerServices__btnRedes:hover {
+.card__btnRedes:hover {
     padding-right: 12px;
     opacity: 1;
 
   }
   
-  .containerServices__btnRedes:hover .btnServices {
+  .card__btnRedes:hover .btnServices {
     visibility: visible;
     position: absolute;
     right: 25px;
@@ -155,10 +166,20 @@ margin: 1rem;
         grid-template-rows: repeat(3, 1fr);
      
     }
-    .containerServices__btnRedes{
+
+    .containerServices__btnPrice{
       width: 31%;
       align-self: flex-end;
     }
   
   }
  
+
+  @media (min-width: 1118px) { 
+    .services {
+  
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   
+  }
+  }
