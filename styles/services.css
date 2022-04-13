@@ -176,7 +176,7 @@ margin: 1rem;
    
     }
     .services {
-  
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
      
