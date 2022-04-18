@@ -8,28 +8,33 @@
     height: 10rem;
 }
 
-.slider-btn{
+/* .slider-btn{
   display: flex;
   margin-top:30px;
-}
+} */
 
 
 .btnCarousel{ 
-  background-color: black;
-  color:white;
+  /* background-color: black; */
+  background-color: #014F86;
   border-radius: 10px;
   padding: 0.2rem 2rem;
   font-size: 1rem;
-  margin-right: 15px;
   opacity: 70%;
-  box-shadow: 3px white ;
   color: white;
+  border: none;
 
 }
 
 .btnCarousel:hover{
   background-color: #A48339;
 
+}
+
+.btnCarousel a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
 }
 
 .containerImg_img{
@@ -196,11 +201,12 @@
     .carousel-inner .carousel-item {
       height: 575px;
     }
-  
-    .carousel-item .carousel-caption{
-       right:0;
-       left:0;
-       top: 0.2rem;
+
+
+    .carousel-container{
+      right:0;
+      left:0;
+      top: 0.2rem;
     }
   
     .containerValores{
