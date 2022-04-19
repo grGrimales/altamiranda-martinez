@@ -1,22 +1,21 @@
 .mainAbout{
-    background-color: white;
+    background-color: #fafafa;
 }
 .containerAbout{
     display: grid;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
     align-items: center;
     justify-items: center;
+    margin-bottom: 4rem;
 }
 
-.titulo__aboutUs{
-    color: #A48339;;
-    font-size: 1.7rem;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-thickness:from-font;
+.title__aboutUs{
+    color: #495057;
+    padding: 1rem;
+    
 }
+
+
 .about_Luis{
     display: flex;
     flex-direction: column;
