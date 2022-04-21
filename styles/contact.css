@@ -73,7 +73,7 @@ padding: 1rem;
 
   .information{
 	  display: flex;
-	  margin: 5%;
+	  margin: 1rem;
   }
   
   .information h2, li{
