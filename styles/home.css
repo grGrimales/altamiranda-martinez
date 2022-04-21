@@ -8,10 +8,11 @@
     height: 10rem;
 }
 
-/* .slider-btn{
-  display: flex;
-  margin-top:30px;
+/* .carousel-inner .carousel-item{
+  transition: transform 2s ease-in-out;
 } */
+
+
 
 
 .btnCarousel{ 

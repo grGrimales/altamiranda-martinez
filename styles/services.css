@@ -16,6 +16,7 @@ justify-content:space-around;
 flex-direction: column;
 align-items: center;
 margin: 1rem;
+margin-bottom: 2rem
 }
 
 .containerServices__title{
@@ -86,6 +87,8 @@ margin: 1rem;
 
   .card__btn:hover, .containerServices__btnPrice:hover{
     opacity: 1;
+    z-index: 1;
+
   }
 
   .containerServices__btnPrice .tooltiptext {

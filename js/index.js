@@ -8,8 +8,6 @@ const list = document.querySelector(".listDropdown");
 const dropdown = document.getElementById("dropdown");
 const containeDropdown = document.getElementById("containeDropdown");
 
-console.log(listNav);
-
 /**
  * Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
  */
