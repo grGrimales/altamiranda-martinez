@@ -145,7 +145,7 @@ nav ul li ul li a:hover {
 
 /*Media query*/
 
-@media (max-width: 769px) {
+@media (max-width: 865px) {
   .nav {
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ nav ul li ul li a:hover {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 865px) {
   .header {
     flex-direction: row;
     width: 100%;

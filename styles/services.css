@@ -2,11 +2,11 @@
 
   grid-template:
       "header" 0.3fr
-      "main" 4fr
-      "footer" 0.5fr;
+      "main" 5.8fr
+      "footer" 0fr;
 }
 
-main{
+main, .containerBody{
   background-color: #fafafa;
 }
 
@@ -62,7 +62,8 @@ margin-bottom: 2rem
     padding: 0.5rem;
     text-align: justify;
     color: black;
-  
+    font-size: 1.3rem;
+    height: 23rem;
   }
   
   .card__btn, .containerServices__btnPrice {
@@ -164,6 +165,19 @@ margin-bottom: 2rem
     text-decoration: none;
   }
 
+  @media (min-width: 576px) { 
+    .containerBody {
+
+      grid-template:
+          "header" 0.3fr
+          "main" 6fr
+          "footer" 0fr;
+    }
+    .card__description {
+      height: 14rem;
+    }
+    
+  }
 @media (min-width: 768px) { 
 
   .containerBody {
@@ -171,7 +185,7 @@ margin-bottom: 2rem
     grid-template:
         "header" 0.3fr
         "main" 7fr
-        "footer" 0.5fr;
+        "footer" 0fr;
   }
   .containerServices{
     justify-content:space-around;
@@ -189,6 +203,10 @@ margin-bottom: 2rem
       width: 31%;
       align-self: flex-end;
     }
+    .card__description {
+   
+      height: 19rem;
+    }
   
   }
  
@@ -200,4 +218,15 @@ margin-bottom: 2rem
       grid-template-rows: repeat(3, 1fr);
    
   }
+
+  .card__description {
+    height: 14.3rem;
+  }
+  }
+
+  @media (min-width: 1320px) { 
+    .card__description {
+   
+      height: 14rem;
+    }
   }

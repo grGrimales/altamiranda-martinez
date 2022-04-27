@@ -12,7 +12,7 @@ const containeDropdown = document.getElementById("containeDropdown");
  * Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
  */
 
-if (window.innerWidth > 768) {
+if (window.innerWidth > 865) {
   listNav.classList.remove("active");
 }
 
@@ -20,12 +20,12 @@ if (window.innerWidth > 768) {
  * Haciendo el menú responsive(adaptable)
  */
 window.addEventListener("resize", function () {
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 865) {
     listNav.classList.remove("active");
     listNav.classList.add("nav");
   }
 
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 865) {
     listNav.classList.add("active");
     listNav.classList.remove("nav");
   }
