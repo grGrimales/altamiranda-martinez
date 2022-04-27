@@ -60,7 +60,6 @@ margin-bottom: 2rem
   
   .card__description {
     padding: 0.5rem;
-    text-align: justify;
     color: black;
     font-size: 1.3rem;
     height: 23rem;
@@ -70,7 +69,6 @@ margin-bottom: 2rem
     width: 100%;
     font-size: 1.25rem;
     border: none;
-    cursor: pointer;
     opacity: 0.8;
     background-color: #014F86;
     padding: 0.8rem;
@@ -219,9 +217,7 @@ margin-bottom: 2rem
    
   }
 
-  .card__description {
-    height: 14.3rem;
-  }
+ 
   }
 
   @media (min-width: 1320px) { 
