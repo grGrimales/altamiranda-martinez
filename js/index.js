@@ -21,7 +21,7 @@ if (window.innerWidth > 865) {
  * Haciendo el menú responsive(adaptable)
  */
 window.addEventListener("resize", function (evento) {
-  console.log("cambio--2");
+  console.log("cambio--3");
 
   if (window.innerWidth >= 865) {
     listNav.classList.remove("active");
