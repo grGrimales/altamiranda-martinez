@@ -19,14 +19,14 @@ if (window.innerWidth > 865) {
 /**
  * Haciendo el menú responsive(adaptable)
  */
-window.addEventListener("resize", function () {
+window.addEventListener("resize", function (evento) {
+  console.log("cambio--1");
+  evento.preventDefault();
   if (window.innerWidth >= 865) {
     listNav.classList.remove("active");
     listNav.classList.add("nav");
   }
-});
 
-window.addEventListener("resize", function () {
   if (window.innerWidth < 865) {
     listNav.classList.add("active");
     listNav.classList.remove("nav");
