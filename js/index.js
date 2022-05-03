@@ -7,7 +7,11 @@ const list = document.querySelector(".listDropdown");
 
 const dropdown = document.getElementById("dropdown");
 const containeDropdown = document.getElementById("containeDropdown");
-var showHamburguesButton = true;
+
+/**
+ * Declaración de variables
+ */
+let showMenuResponsive = true;
 
 /**
  * Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
@@ -21,15 +25,13 @@ if (window.innerWidth > 865) {
  * Haciendo el menú responsive(adaptable)
  */
 window.addEventListener("resize", function (evento) {
-  console.log("cambio--3");
-
   if (window.innerWidth >= 865) {
     listNav.classList.remove("active");
     listNav.classList.add("nav");
   }
 
   if (window.innerWidth < 865) {
-    if (showHamburguesButton === false) {
+    if (showMenuResponsive === false) {
       listNav.classList.add("active");
       listNav.classList.remove("nav");
     } else {
@@ -43,9 +45,9 @@ window.addEventListener("resize", function (evento) {
  * Muestra el menú al hacer click en vista mobile
  */
 const hideMenu = (e) => {
-  showHamburguesButton = !showHamburguesButton;
+  showMenuResponsive = !showMenuResponsive;
 
-  if (showHamburguesButton === false) {
+  if (showMenuResponsive === false) {
     listNav.classList.remove("nav");
     listNav.classList.add("active");
 
@@ -57,22 +59,6 @@ const hideMenu = (e) => {
     responsive.innerHTML =
       ' <span class="iconify" data-icon="dashicons:menu"></span>';
   }
-
-  // listNav.classList.toggle("nav");
-  // listNav.classList.toggle("active");
-  console.log(showHamburguesButton);
-
-  //  changeIcon();
-};
-
-const changeIcon = () => {
-  if (listNav.classList.contains("active")) {
-    responsive.innerHTML =
-      ' <span class="iconify" data-icon="ep:close-bold"></span>';
-  } else {
-    responsive.innerHTML =
-      ' <span class="iconify" data-icon="dashicons:menu"></span>';
-  }
 };
 
 /**
@@ -80,8 +66,6 @@ const changeIcon = () => {
  */
 
 const hideList = () => {
-  console.log("Muestra");
-
   list.classList.toggle("hide");
 };
 /**
