@@ -24,11 +24,13 @@ window.addEventListener("resize", function () {
     listNav.classList.remove("active");
     listNav.classList.add("nav");
   }
+});
 
-  // if (window.innerWidth < 865) {
-  //   listNav.classList.add("active");
-  //   listNav.classList.remove("nav");
-  // }
+window.addEventListener("resize", function () {
+  if (window.innerWidth < 865) {
+    listNav.classList.add("active");
+    listNav.classList.remove("nav");
+  }
 });
 
 /**
