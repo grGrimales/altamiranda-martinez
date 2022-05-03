@@ -25,17 +25,16 @@ window.addEventListener("resize", function () {
     listNav.classList.add("nav");
   }
 
-  if (window.innerWidth < 865) {
-    listNav.classList.add("active");
-    listNav.classList.remove("nav");
-  }
+  // if (window.innerWidth < 865) {
+  //   listNav.classList.add("active");
+  //   listNav.classList.remove("nav");
+  // }
 });
 
 /**
  * Muestra el menú al hacer click en vista mobile
  */
 const hideMenu = (e) => {
-  console.log("Funciona");
   listNav.classList.toggle("nav");
   listNav.classList.toggle("active");
   changeIcon();
