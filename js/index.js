@@ -7,6 +7,7 @@ const list = document.querySelector(".listDropdown");
 
 const dropdown = document.getElementById("dropdown");
 const containeDropdown = document.getElementById("containeDropdown");
+var showHamburguesButton = true;
 
 /**
  * Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
@@ -20,16 +21,21 @@ if (window.innerWidth > 865) {
  * Haciendo el menú responsive(adaptable)
  */
 window.addEventListener("resize", function (evento) {
-  console.log("cambio--1");
-  evento.preventDefault();
+  console.log("cambio--2");
+
   if (window.innerWidth >= 865) {
     listNav.classList.remove("active");
     listNav.classList.add("nav");
   }
 
   if (window.innerWidth < 865) {
-    listNav.classList.add("active");
-    listNav.classList.remove("nav");
+    if (showHamburguesButton === false) {
+      listNav.classList.add("active");
+      listNav.classList.remove("nav");
+    } else {
+      listNav.classList.remove("active");
+      listNav.classList.add("nav");
+    }
   }
 });
 
@@ -37,9 +43,26 @@ window.addEventListener("resize", function (evento) {
  * Muestra el menú al hacer click en vista mobile
  */
 const hideMenu = (e) => {
-  listNav.classList.toggle("nav");
-  listNav.classList.toggle("active");
-  changeIcon();
+  showHamburguesButton = !showHamburguesButton;
+
+  if (showHamburguesButton === false) {
+    listNav.classList.remove("nav");
+    listNav.classList.add("active");
+
+    responsive.innerHTML =
+      ' <span class="iconify" data-icon="ep:close-bold"></span>';
+  } else {
+    listNav.classList.add("nav");
+    listNav.classList.remove("active");
+    responsive.innerHTML =
+      ' <span class="iconify" data-icon="dashicons:menu"></span>';
+  }
+
+  // listNav.classList.toggle("nav");
+  // listNav.classList.toggle("active");
+  console.log(showHamburguesButton);
+
+  //  changeIcon();
 };
 
 const changeIcon = () => {
